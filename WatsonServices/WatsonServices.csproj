@@ -119,15 +119,31 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Conversation\Models\EntityResponse.cs" />
+    <Compile Include="Conversation\Models\Error.cs" />
+    <Compile Include="Conversation\Models\InputData.cs" />
+    <Compile Include="Conversation\Models\Intent.cs" />
+    <Compile Include="Conversation\Models\LogMessageResponse.cs" />
+    <Compile Include="Conversation\Models\LogMessageResponseLevel.cs" />
+    <Compile Include="Conversation\Models\MessageResponse.cs" />
+    <Compile Include="Conversation\Models\Context.cs" />
+    <Compile Include="Conversation\Models\MessageRequest.cs" />
+    <Compile Include="Conversation\Models\OutputData.cs" />
+    <Compile Include="Conversation\Models\SwaggerException.cs" />
+    <Compile Include="Conversation\Models\SystemResponse.cs" />
+    <Compile Include="Conversation\WatsonConversationAttribute.cs" />
+    <Compile Include="Conversation\WatsonConversationClient.cs" />
+    <Compile Include="Conversation\WatsonConversationDialog.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="NaturalLanguageClassifier\Models\ClassifierClass.cs" />
     <Compile Include="NaturalLanguageClassifier\Models\ClassifierResult.cs" />
-    <Compile Include="NaturalLanguageClassifier\WatsonClassifier.cs" />
+    <Compile Include="NaturalLanguageClassifier\WatsonClassifierAttribute.cs" />
     <Compile Include="NaturalLanguageClassifier\WatsonClassifierDialog.cs" />
     <Compile Include="NaturalLanguageClassifier\WatsonClassifierService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WatsonAutoDialog.cs" />
     <Compile Include="WatsonWeatherDialog.cs" />
   </ItemGroup>
   <ItemGroup>
